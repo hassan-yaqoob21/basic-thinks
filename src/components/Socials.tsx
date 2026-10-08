@@ -3,9 +3,7 @@
 import { ArrowUpRight } from "lucide-react";
 import type { SocialIcon } from "@/components/ui/BrandIcons";
 import {
-  GithubIcon,
   InstagramIcon,
-  LinkedinIcon,
   TikTokIcon,
   YoutubeIcon,
 } from "@/components/ui/BrandIcons";
@@ -39,12 +37,6 @@ const socialCards: SocialCard[] = [
     href: socials.tiktok,
     icon: TikTokIcon,
   },
-  {
-    name: "LinkedIn",
-    description: "Technology & professional work",
-    href: socials.linkedin,
-    icon: LinkedinIcon,
-  },
 ];
 
 export function Socials() {
@@ -58,7 +50,7 @@ export function Socials() {
           align="center"
         />
 
-        <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {socialCards.map((card, i) => {
             const Icon = card.icon;
 
@@ -89,20 +81,6 @@ export function Socials() {
             );
           })}
         </div>
-
-        <Reveal className="mt-10" delay={0.2}>
-          <div className="flex items-center justify-center gap-5">
-            <a
-              href={socials.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-sm font-medium text-muted transition-colors hover:text-ink"
-            >
-              <GithubIcon className="h-4 w-4" />
-              GitHub
-            </a>
-          </div>
-        </Reveal>
       </div>
     </section>
   );

@@ -2,9 +2,7 @@
 
 import type { SocialIcon } from "@/components/ui/BrandIcons";
 import {
-  GithubIcon,
   InstagramIcon,
-  LinkedinIcon,
   TikTokIcon,
   YoutubeIcon,
 } from "@/components/ui/BrandIcons";
@@ -23,8 +21,6 @@ const footerSocials: { label: string; href: string; icon: SocialIcon }[] = [
   { label: "YouTube", href: socials.youtube, icon: YoutubeIcon },
   { label: "Instagram", href: socials.instagram, icon: InstagramIcon },
   { label: "TikTok", href: socials.tiktok, icon: TikTokIcon },
-  { label: "LinkedIn", href: socials.linkedin, icon: LinkedinIcon },
-  { label: "GitHub", href: socials.github, icon: GithubIcon },
 ];
 
 export function Footer() {

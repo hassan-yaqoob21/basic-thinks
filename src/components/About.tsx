@@ -9,8 +9,6 @@ const links = [
   { label: "YouTube", href: socials.youtube },
   { label: "Instagram", href: socials.instagram },
   { label: "TikTok", href: socials.tiktok },
-  { label: "LinkedIn", href: socials.linkedin },
-  { label: "GitHub", href: socials.github },
 ];
 
 export function About() {
